@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vehicle Search</title>
+    <link rel="stylesheet" href="styles/template.css" />
+    <script type="module" src="components/vehiclesearch.js"></script>
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+</head>
+
+<div class="container">
+    <header>
+        <h1>Vehicle Search</h1>
+        <nav>
+            <ul>
+                <li><a href='index-people-search.html' name="People search">People search</a></li>
+                <li>Vehicle search</li>
+                <li><a href='index-add-vehicle.html' name="Add a vehicle"> Add a vehicle</a></li>
+            </ul>
+        </nav>
+    </header>
+    <body>
+        <aside>
+            <img src="images/vehicle-image.png" alt="image signifying looking for a car">
+        </aside>
+        <main>
+            <form action="" method="post">
+                <ul>
+                    <li>
+                        <label for="Search by registration number"> Search by registration number:</label>
+                        <input type="text" id="rego" placeholder="Search" />
+                    </li>
+                    <li>
+                        <button type="button" class="submitbutton" , id="submitbutton">Submit</button>
+                    </li>
+                    <li>
+                        <a id="message"></a>
+                    </li>
+                </ul>
+                <div id="results">
+                </div>
+            </form>
+        </main>
+    </body>
+    <footer>
+        <h2>Author: Nicholas Rutherfoord</h2>
+    </footer>
+</div>
+</html>

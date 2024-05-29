@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Add a Vehicle</title>
+    <link rel="stylesheet" href="styles/template.css" />
+    <script type="module" src="components/add-vehicle.js"></script>
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+</head>
+
+<div class="container" id="container">
+    <header>
+        <h1>Add a Vehicle</h1>
+        <nav>
+            <ul>
+                <li><a href='index-people-search.html' name="People search">People search</a></li>
+                <li><a href='index-vehicle-search.html' name="Vehicle search"> Vehicle search</a></li>
+                <li>Add a vehicle</li>
+            </ul>
+        </nav>
+    </header>
+    <body>
+        <aside>
+            <image src="images/add-vehicle.png" alt="image signifying registering a car"></image>
+        </aside>
+        <main>
+            <form action="" method="post" id="addVehicle">
+                <ul id="form-list">
+                    <li>
+                        <label> <strong>Add a New Vehicle </strong></label>
+                    </li>
+                    <li>
+                        <label for="rego"> Vehicle Registration:</label>
+                        <input type="text" id="rego" placeholder="" />
+                    </li>
+                    <li>
+                        <label for="make"> Vehicle Make:</label>
+                        <input type="text" id="make" placeholder="" />
+                    </li>
+                    <li>
+                        <label for="model"> Vehicle Model:</label>
+                        <input type="text" id="model" placeholder="" />
+                    </li>
+                    <li>
+                        <label for="colour"> Vehicle Colour:</label>
+                        <input type="text" id="colour" placeholder="" />
+                    </li>
+                    <li>
+                        <label for="owner"> Vehicle Owner:</label>
+                        <input type="text" id="owner" placeholder="" />
+                    </li>
+                    <li>
+                        <button type="button" class="submitbutton" id="addbutton">Add vehicle</button>
+                    </li>
+                    <li>
+                        <a id="message"></a>
+                    </li>
+                </ul>
+            </form>
+        </main>
+    </body>
+    <footer>
+        <h2>Author: Nicholas Rutherfoord</h2>
+    </footer>
+</div>
+</html>

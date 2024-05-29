@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>People Search</title>
+    <link rel="stylesheet" href="styles/template.css" />
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <script type="module" src="components/peoplesearch.js" defer></script>
+</head>
+
+<div class="container">
+    <header>
+        <h1>People Search </h1>
+        <nav>
+            <ul>
+                <li>People search</li>
+                <li><a href='index-vehicle-search.html' name="Vehicle search"> Vehicle search</a></li>
+                <li><a href='index-add-vehicle.html' name="Add a vehicle"> Add a vehicle</a></li>
+            </ul> 
+        </nav>
+    </header>
+    <body>
+        <aside>
+            <img src="images/people-image.jpg" alt="Image signifying people">
+        </aside>
+        <main>
+            <form action="" method="post" id="add-vehicle-form">
+                <ul>
+                    <li>
+                        <label for="Search by driver name"> Search by driver name:</label>
+                        <input type="text" id="name" name="name" placeholder="Search" />
+                    </li>
+                    <li>
+                        <label for="Search by driving license number"> Search by driving license number:</label>
+                        <input type="text" id="license" name="license" placeholder="Search" />
+                    </li>
+                    <li>
+                        <button type="button" class="submitbutton" , id="submitbuttonPS">Submit</button>
+                    </li>
+                    <li>
+                        <a id="message"></a>
+                    </li>
+                </ul>
+                <div id="results">
+                </div>
+            </form>
+        </main>
+    </body>
+    <footer>
+        <h2>Author: Nicholas Rutherfoord</h2>
+
+    </footer>
+</div>
+</html>
